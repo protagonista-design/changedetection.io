@@ -82,9 +82,9 @@ services:
      # Used for fetching pages via Playwright+Chrome where you need Javascript support.
      # Note: Playwright/browserless not supported on ARM type devices (rPi etc)
 #    playwright-chrome:
-#        hostname: playwright-chrome
-#        image: browserless/chrome
-#        restart: unless-stopped
+       hostname: playwright-chrome
+       image: browserless/chrome
+        restart: unless-stopped
         environment:
             - SCREEN_WIDTH=1920
             - SCREEN_HEIGHT=1024
